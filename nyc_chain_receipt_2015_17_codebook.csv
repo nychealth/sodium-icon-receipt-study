@@ -1,0 +1,69 @@
+﻿"Codebook: Changes in consumer purchasing patterns at New York City chain restaurants following adoption of the sodium warning icon rule, 2015-2017",,,,
+NOTE: Please read ReadMe file,,,,
+Variable Name,Description,Type,Values,Frequency
+Restaurant,Name of restaurant chain where participant was surveyed,Character,IHOP,2329
+,,,Popeyes,816
+,,,Subway,807
+,,,TGI Friday's,892
+Wave,Timepoint when survey was collected,Numeric Categorical,1: 2015-16 (pre-implementation),2827
+,,,2: 2017 (post-implementation),2017
+Location,City where survey was collected,Numeric Categorical,1: NYC ,2827
+,,,2: Yonkers,2017
+Include,Flag for inclusion or exclusion of record,Numeric Categorical,0: Exclude,852
+,,,1: Include,3992
+Excl_detail,Reason for exclusion of record,Numeric Categorical,0: Include,3992
+,,,"1: Exclude, unable to verify purchase (response did not match items on receipt)",236
+,,,"2: Exclude, only purchased alcohol",38
+,,,"3: Exclude, no nutrition information available for entire purchase",56
+,,,"4: Exclude, participated on a day with high # of outliers",100
+,,,"5: Exclude, only purchased non-alcoholic beverage",406
+,,,"6: Exclude, sodium content of purchase >= 12,000 mg",16
+Address,Unique ID for street address where survey was collected,Numeric Categorical,5-14; 25-41,4844
+Outlet,Numeric value for each restaurant chain,,3: Popeyes,816
+,,,4: Subway,807
+,,,5: IHOP,2329
+,,,6: TGI Friday's,892
+Type,Type of restaurant chain,Character,FSR,3221
+,,,QSR,1623
+Purchased_sod,Total amount of sodium (in mg) in items purchased that participant identified as for their individual consumption,Numeric Continuous,"0 - 27,220",4663
+,,,. : Missing,181
+Sq_sod,Square root of purchased_sod,Numeric Continuous,0 - 164.98,4663
+,,,. : Missing,181
+Purchased_cal,Total amount of calories in items purchased that participant identified as for their individual consumption,Numeric Continuous,"0 - 11,420",4663
+,,,. : Missing,181
+Sq_cal,Square root of purchased_cal,Numeric Continuous,0 - 106.86,4663
+,,,. : Missing,181
+Totalwarnings,Total number of items eligible for/displaying warning icon that were purchased for participant's consumption,Numeric Continuous,0-6,4844
+Warningpurchase,Indicates whether participant purchased at least one item eligible for/displaying warning icon,Numeric Categorical,0: No,2556
+,,,1: Yes,2288
+Twowarns,Indicates whether participant purchased at least two items eligible for/displaying warning icon,Numeric Categorical,0: No,4652
+,,,1: Yes,192
+Missing_info,Indicates whether nutritional information was missing for any items purchased for individual consumption,Numeric Categorical,1: Yes,726
+,,,2: No,4118
+Gender,"Participant gender, collected by interviewer observation",Numeric Categorical,1: Male,2202
+,,,2: Female,2637
+,,,. : Missing,5
+Race,Participant race/ethnicity,Numeric Categorical,"1: Asian or Pacific Islander, non-Latino",132
+,,,"2: Black, non-Latino",2026
+,,,3: Latino,1530
+,,,"4: White, non-Latino",984
+,,,"5: Other, non-Latino",154
+,,,. : Don’t know/refused,18
+Agegroup,Participant age (in 5 groups),Numeric Categorical,1: 18-24,790
+,,,2: 25-34,1242
+,,,3: 35-44,1490
+,,,4: 45-64,1121
+,,,5: 65+,196
+,,,. : Refused,5
+Education,Highest education level attained by participant,Numeric Categorical,1: Less than high school,218
+,,,2: High school graduate or GED,1537
+,,,3: S ome college or technical school (1 to 3 years),1691
+,,,4: College graduate,1393
+,,,. : Refused,5
+Residence,Participant residence based on ZIP code,Character,[Blank]: No zip provided,4
+,,,NYC,2731
+,,,Yonkers,1655
+,,,Other,454
+Residence2,"NYC residency, based on ZIP code",Numeric,1: NYC ,2731
+,,,2: Outside of NYC,2109
+,,,. : No zip provided,4
