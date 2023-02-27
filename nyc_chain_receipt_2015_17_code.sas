@@ -1,10 +1,10 @@
 /*Code for results in "Changes in consumer purchasing patterns at New York City chain restaurants following adoption of the sodium warning icon rule, 2015-2017"*/
-/*Dataset posted on Github*/
-/*Please review accompanying README file and codebook posted on Github*/
+/*Dataset posted on Github: https://github.com/nychealth/sodium-icon-receipt-study/blob/main/nyc_chain_receipt_2015_17.sas7bdat*/
+/*Please review accompanying README file and codebook posted on Github: https://github.com/nychealth/sodium-icon-receipt-study*/
 
 
-/*Call in dataset*/
-/*insert libname and filepath here*/
+/*Call in dataset - example call-in satement below*/
+libname sodium_icon_receipt_study 'C:\MyFolder'; /*replace libname if another preference; replace filepath to location where dataset saved*/
 
 /*Format Statements*/
 proc format;
@@ -49,7 +49,7 @@ value EXCLUSIONS_FMT
 run;
 
 data eval;
-/*set step - insert datafile name here*/
+set sodium_icon_receipt_study.nyc_chain_receipt_2015_17; /*set statement = libname assigned in call-in statement above, filename of dataset posted to github repository*/
 format gender GENDER_FMT. race RACE_FMT. education EDUCATION_FMT. agegroup AGE_FMT. location LOCATION_FMT. warningpurchase YN_FMT. twowarns YN_FMT. 
 excl_detail EXCLUSIONS_FMT.;
 run;
