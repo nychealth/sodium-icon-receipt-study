@@ -1,6 +1,7 @@
 # sodium-icon-receipt-study
 ## Changes in consumer purchasing patterns at New York City chain restaurants following adoption of the sodium warning icon rule, 2015-2017
-*Paper citation and url will be listed when available.*   
+Prasad D, Jasek JP, Anekwe AV, Dominianni C, Mezzacca TA, Sisti JS, Farley SM, Kessler K. (2023) Changes in consumer purchasing patterns at New York City chain restaurants following adoption of the sodium warning icon rule, 2015–2017. PLoS ONE 18(4): e0274044. https://doi.org/10.1371/journal.pone.0274044   
+
 This repository contains the dataset, code, and codebook for the paper, "Changes in consumer purchasing patterns at New York City chain restaurants following adoption of the sodium warning icon rule, 2015-2017.” These files are being made publicly available to fulfill the PLOS journals’ data availability requirement (https://journals.plos.org/plosone/s/data-availability).   
 ## Files:  
 * nyc_chain_receipt_2015_17. sas7bdat - SAS dataset with records and variables used for analyses shown in paper. Contains 4,844 observations and 24 variables.  
